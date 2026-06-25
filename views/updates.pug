@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title Update Custom Object Form | Integrating With HubSpot I Practicum
+
+  body
+    h1 Add Game
+
+    a(href="/") Return to homepage
+
+    br
+    br
+
+    form(action="/update-cobj" method="POST")
+
+      div
+        label Game Name
+        input(type="text" name="game_name" required)
+
+      br
+
+      div
+        label Game Genre
+        input(type="text" name="game_genre" required)
+
+      br
+
+      div
+        label Game Rating
+        input(type="text" name="game_rating" required)
+
+      br
+
+      button(type="submit") Submit

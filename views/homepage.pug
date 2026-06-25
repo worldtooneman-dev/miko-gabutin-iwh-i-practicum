@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title Homepage | HubSpot Practicum
+
+  body
+    h1 Games
+
+    a(href="/update-cobj") Add to this table
+
+    br
+    br
+
+    table(border="1")
+      tr
+        th Game Name
+        th Game Genre
+        th Game Rating
+
+      each item in data
+        tr
+          td= item.properties.game_name
+          td= item.properties.game_genre
+          td= item.properties.game_rating
